@@ -23,6 +23,12 @@ class AppKernel extends Kernel
             new SMSBundle\SMSBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new UserBundle\UserBundle(),
+            new ClubBundle\ClubBundle(),
+
+
+            
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
